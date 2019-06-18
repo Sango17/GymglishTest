@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Gymglish Test</string>
+    <string name="candidate_test">Candidate Test</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="coded_by_alexandre_seneviratne">Coded by Alexandre Seneviratne</string>
 </resources>

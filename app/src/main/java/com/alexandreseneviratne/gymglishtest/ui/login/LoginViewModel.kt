@@ -1,4 +1,4 @@
-package com.alexandreseneviratne.gymglishtest
+package com.alexandreseneviratne.gymglishtest.ui.login
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

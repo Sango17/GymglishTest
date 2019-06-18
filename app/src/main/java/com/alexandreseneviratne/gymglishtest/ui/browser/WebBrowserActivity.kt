@@ -1,10 +1,11 @@
-package com.alexandreseneviratne.gymglishtest
+package com.alexandreseneviratne.gymglishtest.ui.browser
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.KeyEvent
 import android.webkit.WebView
 import android.webkit.WebViewClient
+import com.alexandreseneviratne.gymglishtest.R
 import kotlinx.android.synthetic.main.activity_web_browser.*
 
 class WebBrowserActivity : AppCompatActivity() {

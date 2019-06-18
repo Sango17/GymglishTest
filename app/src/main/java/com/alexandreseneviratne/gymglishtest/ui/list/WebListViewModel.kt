@@ -1,4 +1,4 @@
-package com.alexandreseneviratne.gymglishtest
+package com.alexandreseneviratne.gymglishtest.ui.list
 
 import android.view.View
 import androidx.lifecycle.ViewModel

@@ -1,12 +1,15 @@
-package com.alexandreseneviratne.gymglishtest
+package com.alexandreseneviratne.gymglishtest.ui.list
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.alexandreseneviratne.gymglishtest.R
+import com.alexandreseneviratne.gymglishtest.ui.browser.WebBrowserActivity
+import com.alexandreseneviratne.gymglishtest.ui.login.LoginActivity
+import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_website_list.*
 
 class WebsiteListActivity : AppCompatActivity(), View.OnClickListener {
@@ -16,6 +19,7 @@ class WebsiteListActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_website_list)
         setSupportActionBar(toolbar)
+        supportActionBar?.title = "Website List"
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         viewModel = ViewModelProviders.of(this).get(WebListViewModel::class.java)
@@ -24,6 +28,7 @@ class WebsiteListActivity : AppCompatActivity(), View.OnClickListener {
 
         web_list_recycler_view.layoutManager = LinearLayoutManager(this)
         web_list_recycler_view.adapter = viewModel.getAdapter()
+
 
     }
 

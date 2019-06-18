@@ -11,11 +11,11 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".WebBrowserActivity">
+        <activity android:name="com.alexandreseneviratne.gymglishtest.ui.browser.WebBrowserActivity">
         </activity>
-        <activity android:name=".WebsiteListActivity">
+        <activity android:name="com.alexandreseneviratne.gymglishtest.ui.list.WebsiteListActivity">
         </activity>
-        <activity android:name=".LoginActivity">
+        <activity android:name="com.alexandreseneviratne.gymglishtest.ui.login.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

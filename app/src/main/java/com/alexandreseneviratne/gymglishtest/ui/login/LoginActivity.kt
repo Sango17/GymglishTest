@@ -1,4 +1,4 @@
-package com.alexandreseneviratne.gymglishtest
+package com.alexandreseneviratne.gymglishtest.ui.login
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import com.alexandreseneviratne.gymglishtest.R
+import com.alexandreseneviratne.gymglishtest.ui.list.WebsiteListActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class LoginActivity : AppCompatActivity() {
