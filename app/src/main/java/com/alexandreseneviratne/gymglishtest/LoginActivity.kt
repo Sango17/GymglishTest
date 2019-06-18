@@ -1,5 +1,6 @@
 package com.alexandreseneviratne.gymglishtest
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -26,7 +27,10 @@ class LoginActivity : AppCompatActivity() {
 
     private fun updateUI(state: LoginState) {
         return when (state.authorizationStatus) {
-            true -> Toast.makeText(this, "Yeah !", Toast.LENGTH_SHORT).show()
+            true -> {
+                val intent = Intent(this, WebsiteListActivity::class.java)
+                startActivity(intent)
+            }
             false -> {
                 Toast.makeText(this, state.errorMessage, Toast.LENGTH_SHORT).show()
                 clearLoginUI()

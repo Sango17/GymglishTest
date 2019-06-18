@@ -13,7 +13,7 @@ sealed class LoginState(
 )
 
 object LoginSuccess: LoginState(true)
-object LoginFailure: LoginState(false, "Login failed: wrong username/password !")
+object LoginFailure: LoginState(false, "Wrong username/password, please try again !")
 
 class LoginViewModel: ViewModel() {
     private val state =  MutableLiveData<LoginState>()
