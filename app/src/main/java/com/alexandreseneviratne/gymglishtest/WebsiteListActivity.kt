@@ -31,6 +31,12 @@ class WebsiteListActivity : AppCompatActivity(), View.OnClickListener {
         if (v.tag != null) {
             val index: Int = v.tag as Int
             val website = viewModel.getWebsiteList()[index]
+
+            val intent = Intent(this, WebBrowserActivity::class.java)
+            intent.putExtra(WebBrowserActivity.WEBSITE_TITLE, website.title)
+                .putExtra(WebBrowserActivity.WEBSITE_URL_ADDRESS, website.urlAddress)
+
+            startActivity(intent)
         }
     }
 
