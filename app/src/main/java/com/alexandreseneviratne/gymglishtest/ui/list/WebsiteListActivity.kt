@@ -29,7 +29,7 @@ class WebsiteListActivity : AppCompatActivity(), View.OnClickListener {
         web_list_recycler_view.layoutManager = LinearLayoutManager(this)
         web_list_recycler_view.adapter = viewModel.getAdapter()
 
-
+        Snackbar.make(web_list_layout, "You're logged !", Snackbar.LENGTH_SHORT).show()
     }
 
     override fun onClick(v: View) {

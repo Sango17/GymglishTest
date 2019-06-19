@@ -2,7 +2,7 @@ package com.alexandreseneviratne.gymglishtest.ui.list
 
 import android.view.View
 import androidx.lifecycle.ViewModel
-import com.alexandreseneviratne.gymglishtest.Adapter.WebsiteListAdapter
+import com.alexandreseneviratne.gymglishtest.adapter.WebsiteListAdapter
 import com.alexandreseneviratne.gymglishtest.data.Website
 
 /**
@@ -22,6 +22,7 @@ class WebListViewModel: ViewModel() {
         websiteList.add(Website("Gymglish", "https://www.gymglish.com/fr"))
         websiteList.add(Website("Frantastique", "https://www.frantastique.com"))
         websiteList.add(Website("Vatefaireconjuguer", "https://www.vatefaireconjuguer.com/"))
+        websiteList.add(Website("Rich Morning", "https://www.richmorning.com/fr"))
 
         adapter = WebsiteListAdapter(websiteList, itemClickListener)
     }

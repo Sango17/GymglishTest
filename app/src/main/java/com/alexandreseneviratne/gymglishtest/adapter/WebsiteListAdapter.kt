@@ -1,4 +1,4 @@
-package com.alexandreseneviratne.gymglishtest.Adapter
+package com.alexandreseneviratne.gymglishtest.adapter
 
 import android.view.LayoutInflater
 import android.view.View
